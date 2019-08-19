@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:textAlignment="center"
+            android:imeOptions="actionDone"
             android:id="@+id/nickname_edit"
             android:hint="@string/what_is_your_nickname"
             style="@style/NameStyle"/>
@@ -31,6 +32,15 @@
             android:layout_marginTop="@dimen/layout_margin"
             app:fontFamily="@font/roboto"
             style="@style/Widget.AppCompat.Button.Colored"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nickname_text"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:paddingBottom="@dimen/small_padding"
+            style="@style/NameStyle"/>
     <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
